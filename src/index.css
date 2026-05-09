@@ -1,15 +1,11 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --color-bg: #0a0a0f;
-  --color-bg-soft: #11121a;
-  --color-bg-card: #161823;
-  --color-border: #23253a;
-  --color-text: #e4e4e7;
-  --color-text-muted: #9ca3af;
-  --color-accent: #a78bfa;
-  --color-accent-2: #38bdf8;
-  --color-accent-3: #f472b6;
+  --color-accent: #7c3aed;
+  --color-accent-2: #0ea5e9;
+  --color-accent-3: #ec4899;
 
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-display: "Space Grotesk", system-ui, sans-serif;
@@ -23,19 +19,37 @@
 
   body {
     margin: 0;
-    background: var(--color-bg);
-    color: var(--color-text);
+    /* Light theme defaults */
+    background: #fafafa;
+    color: #18181b;
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-image:
+      radial-gradient(ellipse 80% 50% at 20% -10%, rgba(124, 58, 237, 0.10), transparent 60%),
+      radial-gradient(ellipse 60% 40% at 90% 10%, rgba(14, 165, 233, 0.08), transparent 60%),
+      radial-gradient(ellipse 70% 50% at 50% 100%, rgba(236, 72, 153, 0.06), transparent 60%);
+    background-attachment: fixed;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  html.dark body {
+    background: #0a0a0f;
+    color: #e4e4e7;
+    background-image:
       radial-gradient(ellipse 80% 50% at 20% -10%, rgba(167, 139, 250, 0.15), transparent 60%),
       radial-gradient(ellipse 60% 40% at 90% 10%, rgba(56, 189, 248, 0.10), transparent 60%),
       radial-gradient(ellipse 70% 50% at 50% 100%, rgba(244, 114, 182, 0.08), transparent 60%);
-    background-attachment: fixed;
   }
 
   ::selection {
+    background: rgba(124, 58, 237, 0.25);
+    color: #18181b;
+  }
+
+  html.dark ::selection {
     background: rgba(167, 139, 250, 0.35);
     color: #fff;
   }
@@ -43,20 +57,39 @@
 
 @layer utilities {
   .text-gradient {
+    background: linear-gradient(135deg, #7c3aed 0%, #0ea5e9 50%, #ec4899 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .dark .text-gradient {
     background: linear-gradient(135deg, #a78bfa 0%, #38bdf8 50%, #f472b6 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
+  /* Light glass */
   .glass {
-    background: rgba(22, 24, 35, 0.55);
+    background: rgba(255, 255, 255, 0.72);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(124, 58, 237, 0.12);
+  }
+
+  .dark .glass {
+    background: rgba(22, 24, 35, 0.55);
     border: 1px solid rgba(167, 139, 250, 0.12);
   }
 
   .glow-ring {
+    box-shadow:
+      0 0 0 1px rgba(124, 58, 237, 0.18),
+      0 10px 40px -12px rgba(124, 58, 237, 0.25);
+  }
+
+  .dark .glow-ring {
     box-shadow:
       0 0 0 1px rgba(167, 139, 250, 0.25),
       0 10px 40px -12px rgba(167, 139, 250, 0.4);
@@ -64,9 +97,15 @@
 
   .grid-pattern {
     background-image:
+      linear-gradient(rgba(124, 58, 237, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(124, 58, 237, 0.07) 1px, transparent 1px);
+    background-size: 36px 36px;
+  }
+
+  .dark .grid-pattern {
+    background-image:
       linear-gradient(rgba(167, 139, 250, 0.07) 1px, transparent 1px),
       linear-gradient(90deg, rgba(167, 139, 250, 0.07) 1px, transparent 1px);
-    background-size: 36px 36px;
   }
 
   .animate-float {

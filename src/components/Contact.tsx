@@ -36,11 +36,11 @@ export default function Contact() {
       subtitle="Open to full-time roles, freelance work, and interesting collaborations. Drop a message — I usually respond within a day."
     >
       <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="rounded-2xl border border-white/5 bg-white/[0.02] p-6 sm:p-8">
-          <h3 className="font-display text-lg font-semibold text-white">
+        <div className="rounded-2xl border border-zinc-200 bg-white p-6 sm:p-8 dark:border-white/5 dark:bg-white/[0.02]">
+          <h3 className="font-display text-lg font-semibold text-zinc-900 dark:text-white">
             Get in touch
           </h3>
-          <p className="mt-1 text-sm text-zinc-400">
+          <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
             The fastest way to reach me is email. I'm also active on LinkedIn.
           </p>
 
@@ -48,15 +48,15 @@ export default function Contact() {
             {contactRows.map((row) => {
               const Icon = row.icon
               const inner = (
-                <div className="flex items-center gap-4 rounded-xl border border-white/5 bg-white/[0.02] p-4 hover:border-violet-400/30 hover:bg-white/[0.04] transition">
-                  <div className="grid place-items-center w-10 h-10 rounded-lg bg-gradient-to-br from-violet-500/20 to-fuchsia-500/20 border border-violet-400/20 text-violet-300">
+                <div className="flex items-center gap-4 rounded-xl border border-zinc-200 bg-zinc-50 p-4 hover:border-violet-300 hover:bg-white dark:border-white/5 dark:bg-white/[0.02] dark:hover:border-violet-400/30 dark:hover:bg-white/[0.04] transition">
+                  <div className="grid place-items-center w-10 h-10 rounded-lg bg-gradient-to-br from-violet-100 to-fuchsia-100 border border-violet-200 text-violet-600 dark:from-violet-500/20 dark:to-fuchsia-500/20 dark:border-violet-400/20 dark:text-violet-300">
                     <Icon className="w-4 h-4" />
                   </div>
                   <div className="min-w-0">
                     <div className="text-xs uppercase tracking-wider text-zinc-500">
                       {row.label}
                     </div>
-                    <div className="text-sm text-zinc-100 truncate">
+                    <div className="text-sm text-zinc-900 dark:text-zinc-100 truncate">
                       {row.value}
                     </div>
                   </div>
@@ -75,7 +75,7 @@ export default function Contact() {
               href={personal.socials.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm hover:bg-white/10 transition"
+              className="inline-flex items-center gap-2 rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-2 text-sm text-zinc-700 hover:bg-zinc-100 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 dark:hover:bg-white/10 transition"
             >
               <GithubIcon className="w-4 h-4" />
               GitHub
@@ -84,7 +84,7 @@ export default function Contact() {
               href={personal.socials.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm hover:bg-white/10 transition"
+              className="inline-flex items-center gap-2 rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-2 text-sm text-zinc-700 hover:bg-zinc-100 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 dark:hover:bg-white/10 transition"
             >
               <LinkedinIcon className="w-4 h-4" />
               LinkedIn
@@ -93,7 +93,7 @@ export default function Contact() {
         </div>
 
         <div className="relative rounded-2xl overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-violet-600 via-fuchsia-600 to-sky-600 opacity-90" />
+          <div className="absolute inset-0 bg-gradient-to-br from-violet-600 via-fuchsia-600 to-sky-600 opacity-95" />
           <div
             aria-hidden
             className="absolute inset-0 grid-pattern opacity-30 mix-blend-overlay"

@@ -11,11 +11,11 @@ export default function Hero() {
       {/* Decorative blobs */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-32 -left-32 w-[28rem] h-[28rem] rounded-full bg-violet-600/20 blur-3xl animate-blob"
+        className="pointer-events-none absolute -top-32 -left-32 w-[28rem] h-[28rem] rounded-full bg-violet-400/30 dark:bg-violet-600/20 blur-3xl animate-blob"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-10 right-0 w-[24rem] h-[24rem] rounded-full bg-sky-500/15 blur-3xl animate-blob"
+        className="pointer-events-none absolute -top-10 right-0 w-[24rem] h-[24rem] rounded-full bg-sky-400/25 dark:bg-sky-500/15 blur-3xl animate-blob"
       />
       <div
         aria-hidden
@@ -25,35 +25,36 @@ export default function Hero() {
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
           <div className="animate-fade-up">
-            <div className="inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-500/10 px-3 py-1 text-xs sm:text-sm text-violet-200">
+            <div className="inline-flex items-center gap-2 rounded-full border border-violet-300/60 bg-violet-100 px-3 py-1 text-xs sm:text-sm text-violet-700 dark:border-violet-400/20 dark:bg-violet-500/10 dark:text-violet-200">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500 dark:bg-emerald-400" />
               </span>
               Available for select opportunities
             </div>
 
-            <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] text-white">
+            <h1 className="mt-6 font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05] text-zinc-900 dark:text-white">
               Hi, I'm{' '}
               <span className="text-gradient">{personal.shortName}</span>.
               <br />
-              I build things for the&nbsp;web.
+              I build things for the web&nbsp;
+              <span className="text-gradient">&amp; AI</span>.
             </h1>
 
-            <p className="mt-6 text-base sm:text-lg text-zinc-400 max-w-xl leading-relaxed">
+            <p className="mt-6 text-base sm:text-lg text-zinc-600 dark:text-zinc-400 max-w-xl leading-relaxed">
               {personal.tagline}
             </p>
 
-            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-zinc-400">
+            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-zinc-600 dark:text-zinc-400">
               <span className="inline-flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-violet-400" />
+                <MapPin className="w-4 h-4 text-violet-600 dark:text-violet-400" />
                 {personal.location}
               </span>
               <a
                 href={`mailto:${personal.email}`}
-                className="inline-flex items-center gap-2 hover:text-white transition"
+                className="inline-flex items-center gap-2 hover:text-zinc-900 dark:hover:text-white transition"
               >
-                <Mail className="w-4 h-4 text-violet-400" />
+                <Mail className="w-4 h-4 text-violet-600 dark:text-violet-400" />
                 {personal.email}
               </a>
             </div>
@@ -68,7 +69,7 @@ export default function Hero() {
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 backdrop-blur px-5 py-3 text-sm sm:text-base font-medium text-zinc-100 hover:bg-white/10 hover:-translate-y-0.5 transition"
+                className="inline-flex items-center gap-2 rounded-xl border border-zinc-200 bg-white px-5 py-3 text-sm sm:text-base font-medium text-zinc-800 hover:bg-zinc-50 hover:-translate-y-0.5 transition dark:border-white/10 dark:bg-white/5 dark:text-zinc-100 dark:hover:bg-white/10"
               >
                 Get in touch
               </a>
@@ -78,7 +79,7 @@ export default function Hero() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub"
-                  className="p-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition"
+                  className="p-2.5 rounded-xl border border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 dark:hover:bg-white/10 transition"
                 >
                   <GithubIcon className="w-4 h-4" />
                 </a>
@@ -87,7 +88,7 @@ export default function Hero() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn"
-                  className="p-2.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 transition"
+                  className="p-2.5 rounded-xl border border-zinc-200 bg-white text-zinc-700 hover:bg-zinc-50 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 dark:hover:bg-white/10 transition"
                 >
                   <LinkedinIcon className="w-4 h-4" />
                 </a>
@@ -98,12 +99,12 @@ export default function Hero() {
               {personal.stats.map((s) => (
                 <div
                   key={s.label}
-                  className="rounded-xl border border-white/5 bg-white/[0.02] backdrop-blur p-3 sm:p-4 hover:border-violet-400/30 hover:bg-white/[0.04] transition"
+                  className="rounded-xl border border-zinc-200 bg-white/60 backdrop-blur p-3 sm:p-4 hover:border-violet-300 hover:bg-white transition dark:border-white/5 dark:bg-white/[0.02] dark:hover:border-violet-400/30 dark:hover:bg-white/[0.04]"
                 >
                   <dt className="text-xs sm:text-sm text-zinc-500">
                     {s.label}
                   </dt>
-                  <dd className="mt-1 font-display text-xl sm:text-2xl font-semibold text-white">
+                  <dd className="mt-1 font-display text-xl sm:text-2xl font-semibold text-zinc-900 dark:text-white">
                     {s.value}
                   </dd>
                 </div>
@@ -114,20 +115,43 @@ export default function Hero() {
           {/* Avatar / decorative card */}
           <div className="relative animate-fade-up [animation-delay:0.1s]">
             <div className="relative mx-auto w-full max-w-md">
-              <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-violet-500 via-fuchsia-500 to-sky-500 opacity-30 blur-2xl" />
+              <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-violet-500 via-fuchsia-500 to-sky-500 opacity-25 dark:opacity-30 blur-2xl" />
               <div className="relative rounded-3xl glass p-6 sm:p-8 glow-ring">
                 <div className="flex items-center gap-4">
-                  <div className="relative">
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 blur opacity-60" />
-                    <div className="relative grid place-items-center w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br from-violet-500 via-fuchsia-500 to-sky-500 text-white font-display font-bold text-2xl">
-                      {personal.initials}
+                  <div className="relative shrink-0">
+                    <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-br from-violet-500 via-fuchsia-500 to-sky-500 blur-sm opacity-35" />
+                    <div className="relative w-28 h-28 sm:w-36 sm:h-36 rounded-2xl p-[2px] bg-gradient-to-br from-violet-500 via-fuchsia-500 to-sky-500 shadow-md shadow-violet-500/15">
+                      {personal.avatarUrl ? (
+                        <img
+                          src={personal.avatarUrl}
+                          alt={personal.name}
+                          loading="eager"
+                          className="w-full h-full rounded-[14px] object-cover object-top bg-zinc-200 dark:bg-zinc-800"
+                          onError={(e) => {
+                            const img = e.currentTarget
+                            img.style.display = 'none'
+                            const fallback = img.nextElementSibling as HTMLElement | null
+                            if (fallback) fallback.style.display = 'grid'
+                          }}
+                        />
+                      ) : null}
+                      <div
+                        className="w-full h-full rounded-[14px] bg-gradient-to-br from-violet-500 via-fuchsia-500 to-sky-500 text-white font-display font-bold text-2xl place-items-center"
+                        style={{
+                          display: personal.avatarUrl ? 'none' : 'grid',
+                        }}
+                      >
+                        {personal.initials}
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <h3 className="font-display text-lg sm:text-xl font-semibold text-white">
+                  <div className="min-w-0">
+                    <h3 className="font-display text-lg sm:text-xl font-semibold text-zinc-900 dark:text-white">
                       {personal.name}
                     </h3>
-                    <p className="text-sm text-zinc-400">{personal.title}</p>
+                    <p className="mt-0.5 text-sm font-semibold text-gradient">
+                      {personal.title}
+                    </p>
                   </div>
                 </div>
 
@@ -135,21 +159,21 @@ export default function Hero() {
                   {personal.highlights.map((h) => (
                     <li
                       key={h}
-                      className="flex items-start gap-2.5 text-sm text-zinc-300"
+                      className="flex items-start gap-2.5 text-sm text-zinc-700 dark:text-zinc-300"
                     >
-                      <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-gradient-to-r from-violet-400 to-fuchsia-400 shrink-0" />
+                      <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-gradient-to-r from-violet-500 to-fuchsia-500 dark:from-violet-400 dark:to-fuchsia-400 shrink-0" />
                       {h}
                     </li>
                   ))}
                 </ul>
 
-                <div className="mt-6 pt-5 border-t border-white/10 flex items-center gap-3">
+                <div className="mt-6 pt-5 border-t border-zinc-200 dark:border-white/10 flex items-center gap-3">
                   <span className="text-xs uppercase tracking-wider text-zinc-500">
                     Now
                   </span>
-                  <span className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300 border border-emerald-400/20">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                    Leading Full Stack @ Patternlab.AI
+                  <span className="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700 border border-emerald-300 dark:bg-emerald-500/10 dark:text-emerald-300 dark:border-emerald-400/20">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse" />
+                    Senior Full Stack Dev @ Patternlab.AI
                   </span>
                 </div>
               </div>

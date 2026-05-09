@@ -15,8 +15,8 @@ const traits = [
   },
   {
     icon: Users,
-    title: 'Team-lead experience',
-    text: 'Currently leading a small full-stack team — code reviews, architecture calls, and unblocking teammates.',
+    title: 'Senior-level experience',
+    text: 'Senior full-stack at Patternlab.AI — code reviews, architecture calls, and unblocking teammates.',
   },
   {
     icon: Sparkles,
@@ -36,23 +36,23 @@ export default function About() {
           <br className="hidden sm:block" /> things that just work.
         </>
       }
-      subtitle="I'm a full-stack developer with 3.5+ years of experience building production web apps across startups and international clients. Today I lead full-stack delivery at Patternlab.AI."
+      subtitle="I'm a full-stack developer with 4+ years of experience building production web apps across startups and international clients. Today I work as a Senior Full Stack Developer at Patternlab.AI."
     >
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {traits.map((t) => (
           <div
             key={t.title}
-            className="group relative rounded-2xl border border-white/5 bg-white/[0.02] p-6 hover:border-violet-400/30 hover:bg-white/[0.04] transition"
+            className="group relative rounded-2xl border border-zinc-200 bg-white p-6 hover:border-violet-300 hover:shadow-lg hover:shadow-violet-500/5 dark:border-white/5 dark:bg-white/[0.02] dark:hover:border-violet-400/30 dark:hover:bg-white/[0.04] transition"
           >
-            <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-violet-500/0 via-fuchsia-500/0 to-sky-500/0 opacity-0 group-hover:opacity-100 group-hover:from-violet-500/10 group-hover:via-fuchsia-500/10 group-hover:to-sky-500/10 transition" />
+            <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-violet-500/0 via-fuchsia-500/0 to-sky-500/0 opacity-0 group-hover:opacity-100 group-hover:from-violet-500/5 group-hover:via-fuchsia-500/5 group-hover:to-sky-500/5 dark:group-hover:from-violet-500/10 dark:group-hover:via-fuchsia-500/10 dark:group-hover:to-sky-500/10 transition" />
             <div className="relative">
-              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-gradient-to-br from-violet-500/20 to-fuchsia-500/20 border border-violet-400/20 text-violet-300">
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-gradient-to-br from-violet-100 to-fuchsia-100 border border-violet-200 text-violet-600 dark:from-violet-500/20 dark:to-fuchsia-500/20 dark:border-violet-400/20 dark:text-violet-300">
                 <t.icon className="w-5 h-5" />
               </div>
-              <h3 className="mt-4 font-display text-lg font-semibold text-white">
+              <h3 className="mt-4 font-display text-lg font-semibold text-zinc-900 dark:text-white">
                 {t.title}
               </h3>
-              <p className="mt-2 text-sm text-zinc-400 leading-relaxed">
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 {t.text}
               </p>
             </div>
@@ -60,8 +60,8 @@ export default function About() {
         ))}
       </div>
 
-      <div className="mt-10 rounded-2xl border border-white/5 bg-white/[0.02] p-6 sm:p-8">
-        <h3 className="font-display text-base font-semibold text-white">
+      <div className="mt-10 rounded-2xl border border-zinc-200 bg-white p-6 sm:p-8 dark:border-white/5 dark:bg-white/[0.02]">
+        <h3 className="font-display text-base font-semibold text-zinc-900 dark:text-white">
           Personal strengths
         </h3>
         <p className="mt-1 text-sm text-zinc-500">
@@ -71,7 +71,7 @@ export default function About() {
           {skills.personal.map((s) => (
             <span
               key={s}
-              className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs sm:text-sm text-zinc-200 hover:border-violet-400/30 hover:bg-violet-500/10 transition"
+              className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs sm:text-sm text-zinc-700 hover:border-violet-300 hover:bg-violet-50 hover:text-violet-700 dark:border-white/10 dark:bg-white/5 dark:text-zinc-200 dark:hover:border-violet-400/30 dark:hover:bg-violet-500/10 dark:hover:text-violet-200 transition"
             >
               {s}
             </span>

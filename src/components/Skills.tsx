@@ -37,10 +37,10 @@ export default function Skills() {
           return (
             <div
               key={cat.id}
-              className="group relative rounded-2xl border border-white/5 bg-white/[0.02] p-6 hover:border-white/10 transition overflow-hidden"
+              className="group relative rounded-2xl border border-zinc-200 bg-white p-6 hover:shadow-lg hover:shadow-violet-500/5 dark:border-white/5 dark:bg-white/[0.02] dark:hover:border-white/10 transition overflow-hidden"
             >
               <div
-                className={`absolute -top-12 -right-12 w-40 h-40 rounded-full bg-gradient-to-br ${cat.accent} opacity-10 blur-3xl group-hover:opacity-20 transition`}
+                className={`absolute -top-12 -right-12 w-40 h-40 rounded-full bg-gradient-to-br ${cat.accent} opacity-15 dark:opacity-10 blur-3xl group-hover:opacity-30 dark:group-hover:opacity-20 transition`}
               />
               <div className="relative">
                 <div
@@ -48,7 +48,7 @@ export default function Skills() {
                 >
                   <Icon className="w-5 h-5" />
                 </div>
-                <h3 className="mt-4 font-display text-lg font-semibold text-white">
+                <h3 className="mt-4 font-display text-lg font-semibold text-zinc-900 dark:text-white">
                   {cat.title}
                 </h3>
 
@@ -56,12 +56,14 @@ export default function Skills() {
                   {cat.items.map((item) => (
                     <li key={item.name}>
                       <div className="flex items-center justify-between text-sm">
-                        <span className="text-zinc-200">{item.name}</span>
+                        <span className="text-zinc-700 dark:text-zinc-200">
+                          {item.name}
+                        </span>
                         <span className="text-xs text-zinc-500 font-mono">
                           {item.level}%
                         </span>
                       </div>
-                      <div className="mt-1.5 h-1.5 w-full rounded-full bg-white/5 overflow-hidden">
+                      <div className="mt-1.5 h-1.5 w-full rounded-full bg-zinc-100 dark:bg-white/5 overflow-hidden">
                         <div
                           className={`h-full rounded-full bg-gradient-to-r ${cat.accent}`}
                           style={{ width: `${item.level}%` }}

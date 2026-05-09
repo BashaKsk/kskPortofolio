@@ -10,7 +10,7 @@
         "Curated result cards with external links",
         "Responsive Bootstrap-driven layout"
       ],
-      "url": "https://kskwiki.ccbp.tech/",
+      "demoUrl": "https://kskwiki.ccbp.tech/",
       "accent": "from-violet-500 to-fuchsia-500"
     },
     {
@@ -23,8 +23,50 @@
         "Local persistence so nothing is lost",
         "Mobile-first responsive UI"
       ],
-      "url": "https://ksktodo.ccbp.tech/",
+      "demoUrl": "https://ksktodo.ccbp.tech/",
       "accent": "from-sky-500 to-cyan-500"
+    },
+    {
+      "id": "understanding-typescript",
+      "title": "Understanding TypeScript",
+      "description": "Hands-on follow-along of Maximilian Schwarzmüller's Udemy course — deep-diving into TypeScript's type system, generics, decorators, and tooling.",
+      "tags": ["TypeScript", "Node.js", "Webpack", "Decorators"],
+      "highlights": [
+        "Advanced types, generics & utility types",
+        "Class & method decorators in practice",
+        "Strict-mode tsconfig with modular setup"
+      ],
+      "githubUrl": "https://github.com/BashaKsk/understaning_typescript",
+      "category": "Learning",
+      "accent": "from-indigo-500 to-blue-500"
+    },
+    {
+      "id": "ml-essentials",
+      "title": "ML Essentials",
+      "description": "Classic machine-learning workouts — KNN digit recognition and logistic regression for the Iris flower classification & California house-price prediction, all built with scikit-learn.",
+      "tags": ["Python", "scikit-learn", "NumPy", "Pandas", "Jupyter"],
+      "highlights": [
+        "KNN classifier on the digits dataset",
+        "Logistic regression on Iris flower classification",
+        "House-price prediction with logistic regression"
+      ],
+      "githubUrl": "https://github.com/BashaKsk/ml_essentials",
+      "category": "Machine Learning",
+      "accent": "from-emerald-500 to-teal-500"
+    },
+    {
+      "id": "langchain",
+      "title": "LangChain · NLP & GenAI",
+      "description": "Exploration of LangChain for building GenAI workflows — covering NLP fundamentals, retrieval pipelines, and Neo4j as a graph database for context-aware reasoning.",
+      "tags": ["Python", "LangChain", "GenAI", "NLP", "Neo4j"],
+      "highlights": [
+        "LLM-powered NLP pipelines with LangChain",
+        "Neo4j graph database integration for context",
+        "Foundations of GenAI app architecture"
+      ],
+      "githubUrl": "https://github.com/BashaKsk/langchain",
+      "category": "GenAI",
+      "accent": "from-pink-500 to-rose-500"
     }
   ]
 }

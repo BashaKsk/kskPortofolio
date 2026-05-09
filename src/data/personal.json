@@ -2,28 +2,30 @@
   "name": "Basha Karuchola Shaik",
   "shortName": "Basha",
   "initials": "BKS",
-  "title": "Full Stack Developer · Team Lead",
-  "tagline": "I craft scalable web products end-to-end — from pixel-perfect React UIs to micro-services in Node & NestJS, deployed on the cloud.",
+  "title": "Senior Full Stack Developer",
+  "tagline": "Full-stack developer with 4+ years of experience — from pixel-perfect React UIs to NestJS micro-services, with hands-on work in ML and GenAI / LangChain on the side.",
   "location": "Guntur, Andhra Pradesh, India",
   "email": "kskbasha777@gmail.com",
   "phone": "+91 95814 11244",
   "resumeUrl": "/KskBashaNewCv.pdf",
+  "avatarUrl": "/basha.jpeg",
   "socials": {
     "github": "https://github.com/BashaKsk",
     "linkedin": "https://www.linkedin.com/in/ksk-basha"
   },
   "stats": [
-    { "label": "Years of Experience", "value": "3.5+" },
+    { "label": "Years of Experience", "value": "4+" },
     { "label": "Companies", "value": "4" },
-    { "label": "Tech Stacks", "value": "10+" },
+    { "label": "Tech Stacks", "value": "12+" },
     { "label": "Projects Shipped", "value": "20+" }
   ],
   "highlights": [
-    "Currently leading a Full Stack team at Patternlab.AI",
-    "Worked with international clients (Canada) at professional standards",
+    "Senior Full Stack Developer at Patternlab.AI",
     "Strong in React 18 / TypeScript / Redux on the frontend",
     "Comfortable with NestJS micro-services on the backend",
     "Hands-on with AWS, Azure & GCP",
-    "Loves clean code, observation, and fast iteration"
+    "ML hands-on: KNN, logistic regression with scikit-learn",
+    "GenAI & NLP with LangChain + Neo4j graph database",
+    "Worked with international clients (Canada) at professional standards"
   ]
 }

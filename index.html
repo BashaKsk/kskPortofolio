@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Basha Karuchola Shaik — Full Stack Developer & Team Lead. React, Node.js, TypeScript, Cloud." />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#fafafa" />
+    <meta name="description" content="Basha Karuchola Shaik — Senior Full Stack Developer. React, Node.js, TypeScript, Cloud, AI/GenAI." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +16,14 @@
       rel="stylesheet"
     />
     <title>Basha Karuchola Shaik — Full Stack Developer</title>
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t === 'dark') document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

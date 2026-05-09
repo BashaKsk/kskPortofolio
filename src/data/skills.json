@@ -6,13 +6,13 @@
       "icon": "Layout",
       "accent": "from-violet-400 to-fuchsia-500",
       "items": [
-        { "name": "HTML5", "level": 95 },
-        { "name": "CSS3 / Bootstrap", "level": 92 },
-        { "name": "JavaScript (ES6+)", "level": 94 },
-        { "name": "TypeScript", "level": 90 },
-        { "name": "React.js (v17 / v18)", "level": 93 },
-        { "name": "Redux", "level": 88 },
-        { "name": "Webpack", "level": 78 }
+        { "name": "HTML5", "level": 100 },
+        { "name": "CSS3 / Bootstrap", "level": 97 },
+        { "name": "JavaScript (ES6+)", "level": 99 },
+        { "name": "TypeScript", "level": 97 },
+        { "name": "React.js (v17 / v18)", "level": 98 },
+        { "name": "Redux", "level": 96 },
+        { "name": "Webpack", "level": 96 }
       ]
     },
     {
@@ -21,10 +21,10 @@
       "icon": "Server",
       "accent": "from-sky-400 to-cyan-500",
       "items": [
-        { "name": "Node.js", "level": 88 },
-        { "name": "Express.js", "level": 86 },
-        { "name": "NestJS (Microservices)", "level": 84 },
-        { "name": "REST APIs", "level": 92 }
+        { "name": "Node.js", "level": 100 },
+        { "name": "Express.js", "level": 100 },
+        { "name": "NestJS (Microservices)", "level": 96 },
+        { "name": "REST APIs", "level": 100 }
       ]
     },
     {
@@ -33,9 +33,9 @@
       "icon": "Cloud",
       "accent": "from-emerald-400 to-teal-500",
       "items": [
-        { "name": "AWS", "level": 80 },
-        { "name": "Microsoft Azure", "level": 78 },
-        { "name": "Google Cloud (GCP)", "level": 75 }
+        { "name": "AWS", "level": 90 },
+        { "name": "Microsoft Azure", "level": 88 },
+        { "name": "Google Cloud (GCP)", "level": 86 }
       ]
     },
     {
@@ -44,8 +44,8 @@
       "icon": "Database",
       "accent": "from-amber-400 to-orange-500",
       "items": [
-        { "name": "MongoDB", "level": 85 },
-        { "name": "SQLite", "level": 80 }
+        { "name": "MongoDB", "level": 92 },
+        { "name": "SQLite", "level": 88 }
       ]
     },
     {
@@ -54,9 +54,9 @@
       "icon": "Sparkles",
       "accent": "from-pink-400 to-rose-500",
       "items": [
-        { "name": "Python", "level": 78 },
-        { "name": "NumPy", "level": 72 },
-        { "name": "Pandas", "level": 72 }
+        { "name": "Python", "level": 90 },
+        { "name": "NumPy", "level": 87 },
+        { "name": "Pandas", "level": 87 }
       ]
     },
     {
@@ -65,9 +65,9 @@
       "icon": "Wrench",
       "accent": "from-indigo-400 to-purple-500",
       "items": [
-        { "name": "Git", "level": 92 },
-        { "name": "BitBucket", "level": 88 },
-        { "name": "Jira", "level": 86 }
+        { "name": "Git", "level": 95 },
+        { "name": "BitBucket", "level": 90 },
+        { "name": "Jira", "level": 88 }
       ]
     }
   ],
