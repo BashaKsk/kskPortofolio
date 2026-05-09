@@ -1,0 +1,29 @@
+{
+  "name": "Basha Karuchola Shaik",
+  "shortName": "Basha",
+  "initials": "BKS",
+  "title": "Full Stack Developer · Team Lead",
+  "tagline": "I craft scalable web products end-to-end — from pixel-perfect React UIs to micro-services in Node & NestJS, deployed on the cloud.",
+  "location": "Guntur, Andhra Pradesh, India",
+  "email": "kskbasha777@gmail.com",
+  "phone": "+91 95814 11244",
+  "resumeUrl": "/KskBashaNewCv.pdf",
+  "socials": {
+    "github": "https://github.com/BashaKsk",
+    "linkedin": "https://www.linkedin.com/in/ksk-basha"
+  },
+  "stats": [
+    { "label": "Years of Experience", "value": "3.5+" },
+    { "label": "Companies", "value": "4" },
+    { "label": "Tech Stacks", "value": "10+" },
+    { "label": "Projects Shipped", "value": "20+" }
+  ],
+  "highlights": [
+    "Currently leading a Full Stack team at Patternlab.AI",
+    "Worked with international clients (Canada) at professional standards",
+    "Strong in React 18 / TypeScript / Redux on the frontend",
+    "Comfortable with NestJS micro-services on the backend",
+    "Hands-on with AWS, Azure & GCP",
+    "Loves clean code, observation, and fast iteration"
+  ]
+}

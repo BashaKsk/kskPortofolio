@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "id": "patternlab",
+      "role": "Full Stack Developer · Team Lead",
+      "company": "Patternlab.AI",
+      "location": "Hyderabad, India",
+      "period": "Sep 2024 — Present",
+      "current": true,
+      "summary": "Leading a full-stack squad — owning architecture, code quality, and delivery for AI-powered web products.",
+      "highlights": [
+        "Lead day-to-day delivery for a small full-stack team",
+        "Architect React + TypeScript front-ends and NestJS micro-services",
+        "Drive code reviews, sprint planning, and tech decisions"
+      ],
+      "stack": ["React", "TypeScript", "NestJS", "MongoDB", "AWS"]
+    },
+    {
+      "id": "cybermart",
+      "role": "Full Stack Developer",
+      "company": "CyberMart India",
+      "location": "Hyderabad, India",
+      "period": "Oct 2023 — Sep 2024",
+      "summary": "Built and shipped customer-facing features across an e-commerce platform stack.",
+      "highlights": [
+        "Implemented end-to-end features across UI and APIs",
+        "Improved page performance and component reusability",
+        "Collaborated with design, QA and product"
+      ],
+      "stack": ["React", "Redux", "Node.js", "Express", "MongoDB"]
+    },
+    {
+      "id": "crenspire",
+      "role": "Full Stack Developer",
+      "company": "Crenspire Technologies",
+      "location": "Ahmedabad, India",
+      "period": "Mar 2023 — Sep 2023",
+      "summary": "Worked with a Canada-based client following professional coding standards and review processes.",
+      "highlights": [
+        "Delivered features against international client SLAs",
+        "Followed strict code-review and testing standards",
+        "Owned mid-sized modules end to end"
+      ],
+      "stack": ["React", "TypeScript", "Node.js", "Git", "Jira"]
+    },
+    {
+      "id": "sanketika",
+      "role": "Full Stack Developer",
+      "company": "Sanketika Consulting Pvt Ltd",
+      "location": "Bangalore, India",
+      "period": "Mar 2022 — Dec 2022",
+      "summary": "First professional role — building production web applications and learning enterprise workflows.",
+      "highlights": [
+        "Contributed to full-stack web product development",
+        "Picked up Git, BitBucket, and agile workflows",
+        "Shipped features in fast iterative cycles"
+      ],
+      "stack": ["JavaScript", "React", "Node.js", "Express", "SQLite"]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "id": "nxtwave",
+      "title": "Industry Ready Certification — Full-Stack Development & ML",
+      "institution": "Nxtwave Disruptive Technologies",
+      "period": "Apr 2021 — Feb 2022",
+      "score": "Certified",
+      "description": "Intensive industry-ready program covering modern full-stack development and machine learning fundamentals."
+    },
+    {
+      "id": "btech",
+      "title": "B.Tech, Mechanical Engineering",
+      "institution": "Rajiv Gandhi University of Knowledge & Technologies, Ongole",
+      "period": "Graduated May 2022",
+      "score": "CGPA 9.0",
+      "description": "Bachelor of Technology with strong analytical and problem-solving foundation."
+    },
+    {
+      "id": "puc",
+      "title": "Pre-University Course (PUC)",
+      "institution": "Rajiv Gandhi University of Knowledge & Technologies, Ongole",
+      "period": "Completed May 2018",
+      "score": "CGPA 8.17",
+      "description": "Pre-university coursework with focus on Math, Physics and Chemistry."
+    },
+    {
+      "id": "ssc",
+      "title": "Secondary School Certificate (SSC)",
+      "institution": "ZPHS Boppudi, Chilakaluripeta, Guntur",
+      "period": "Completed Mar 2016",
+      "score": "CGPA 9.5",
+      "description": "Strong academic foundation with consistent top-of-class performance."
+    }
+  ]
+}

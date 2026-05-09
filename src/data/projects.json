@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "id": "wikipedia-search",
+      "title": "Wikipedia Search Application",
+      "description": "A custom Wikipedia search experience where users can search topics and view curated, well-formatted results pulled from the public API.",
+      "tags": ["HTML", "CSS", "JavaScript", "REST API", "Bootstrap"],
+      "highlights": [
+        "Live search with debounced API calls",
+        "Curated result cards with external links",
+        "Responsive Bootstrap-driven layout"
+      ],
+      "url": "https://kskwiki.ccbp.tech/",
+      "accent": "from-violet-500 to-fuchsia-500"
+    },
+    {
+      "id": "todos-app",
+      "title": "Todos Application",
+      "description": "A clean, reactive Todo manager — create tasks, mark them complete, and remove finished work. Persists state and works seamlessly on mobile.",
+      "tags": ["HTML", "CSS", "JavaScript", "REST API", "Bootstrap"],
+      "highlights": [
+        "Add / complete / delete task flows",
+        "Local persistence so nothing is lost",
+        "Mobile-first responsive UI"
+      ],
+      "url": "https://ksktodo.ccbp.tech/",
+      "accent": "from-sky-500 to-cyan-500"
+    }
+  ]
+}
